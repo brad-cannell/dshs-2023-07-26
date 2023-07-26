@@ -1,11 +1,10 @@
+/* Vertical centering withing columns */
 /* https://github.com/quarto-dev/quarto-cli/discussions/1386 */
 
-/* file: style.css */
 #v-center {
   vertical-align: middle;
 }
 
-/* file: style.css */
 .v-center-container {
   display: flex;
   justify-content: center;
@@ -13,8 +12,10 @@
   height: 90%;
 }
 
+/* Centering all slide content -- except header */
 /* https://github.com/quarto-dev/quarto-cli/discussions/2951 */
-
+/* https://stackoverflow.com/questions/75947268/center-slide-header-in-middle-of-revealjs-quarto */
+/* https://twitter.com/patscli/status/1582832919323693056 */
 .center-xy {
   margin: 0;
   position: absolute;
@@ -22,4 +23,16 @@
   left: 50%;
   -ms-transform: translateY(-50%), translateX(-50%);
   transform: translateY(-50%), translateX(-50%);
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.horizonal-center {
+  text-align: center;
 }

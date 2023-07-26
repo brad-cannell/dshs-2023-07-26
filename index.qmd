@@ -252,8 +252,10 @@ R is...
 
 -   <https://shiny.posit.co/>
 
-## Questions
+## Questions 
 
+::: {.vertical-center .horizonal-center}
 If you have any follow-up questions for me, please feel free to post them on the [discussion board](https://github.com/brad-cannell/dshs-2023-07-26/discussions/categories/q-a) or email me at [Michael.B.Cannell@uth.tmc.edu](mailto:Michael.B.Cannell@uth.tmc.edu).
 
 Thank you for your time and attention!
+:::
