@@ -1,0 +1,25 @@
+/* https://github.com/quarto-dev/quarto-cli/discussions/1386 */
+
+/* file: style.css */
+#v-center {
+  vertical-align: middle;
+}
+
+/* file: style.css */
+.v-center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+}
+
+/* https://github.com/quarto-dev/quarto-cli/discussions/2951 */
+
+.center-xy {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translateY(-50%), translateX(-50%);
+  transform: translateY(-50%), translateX(-50%);
+}
