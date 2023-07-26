@@ -1,0 +1,59 @@
+# =============================================================================
+# Introduction to R 
+# A presentation for the Texas Department of State Health Services (DSHS)
+# 2023-07-26
+# Point of contact: Courtney Dezendorf (courtney.dezendorf@dshs.texas.gov)
+# =============================================================================
+
+Development Notes
+-----------------
+
+- Ice Breaker
+  - Introduce myself
+
+- What can R do?
+  - Dashboards - DETECT
+  - Books (reference manuals) - R4Epi
+  - Websites - Find examples
+  - Presentations - This one
+  - Shiny applications - Show examples from the Shiny Gallery
+  - Reports and data analysis
+  
+- Summary
+ - Free
+ - Extendable
+ - Works on all operating systems.
+ - Powerful - transfer, manage, analyze, present, interact.
+
+- How can you get started?
+  - See R4Epi and other online books.
+  - Posit Cloud.
+
+
+Figure out
+----------
+- How do I make the presentation available for others later?
+- How do I adjust the logo size?
+- How do I vertically align text? (https://github.com/quarto-dev/quarto-cli/discussions/1386)
+- How do I center the link on the slide. (https://github.com/quarto-dev/quarto-cli/discussions/2951)
+
+
+Notes during the presentation
+-----------------------------
+
+- Names
+  - Courtney Dezendorf
+  - Sam
+  - We ended up getting too many people to go through everyone's name
+- In what ways do you currently interact with data?
+  - P
+- What software(s) do you currently use to interact with data?
+  - P
+- What do you like about it?
+  - P
+- What could be better?
+  - P
+- What data management, data analysis, and/or reporting skills would you like to learn more about and/or improve?
+  - Visualization
+  - Big data
+  - Genomics data

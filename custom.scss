@@ -1,0 +1,35 @@
+/******************************************************************************
+Custom CSS styling for the Test Quarto Book
+******************************************************************************/
+
+/*-- scss:defaults --*/
+
+// Fonts
+// Importing a font from Google Fonts (https://ucsb-meds.github.io/customizing-quarto-websites/#/select-fonts)
+// @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap'); // For testing
+//$codeFont:  "Courier New", Courier, monospace;
+
+// Colors
+// $purple: #AE8BD1; // For testing
+
+// Headings
+// $presentation-heading-color: #383d3d !default; // For testing
+
+/*-- scss:rules --*/
+
+/*-- Vertically Center Text on Slide --*/
+// https://github.com/quarto-dev/quarto-cli/discussions/1386
+#vcenter {
+  vertical-align: middle;
+}
+
+.vcenter {
+  vertical-align: middle;
+}
+
+.v-center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+}

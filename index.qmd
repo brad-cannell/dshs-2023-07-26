@@ -1,0 +1,253 @@
+---
+title: "Introduction to R"
+subtitle: "Texas Department of State Health Services"
+date: "July 26, 2023"
+format: 
+  revealjs:
+    css: style.css
+    preview-links: false
+logo: uthealth_sph_logo.png
+---
+
+## About Me
+
+::: columns
+::: {.column style="vertical-align: middle;"}
+Brad Cannell, PhD, MPH\
+Associate Professor\
+UTHealth-Houston School of Public Health
+:::
+
+::: {.column style="vertical-align: middle;"}
+![](cannell-headshot.jpg)
+:::
+:::
+
+::: notes
+-   Introduce myself
+
+-   I have an MPH from the University of Louisville, a PhD in epidemiology from UF, and two graduate certificates in big data and predictive analytics.
+
+-   I'm writing a book on using the R programming language for learning about and practicing epidemiology.
+:::
+
+## Introductions
+
+-   Name
+-   In what ways do you currently interact with data?
+-   What software(s) do you currently use to interact with data?
+    -   What do you like about it?
+    -   What could be better?
+-   What data management, data analysis, and/or reporting skills would you like to learn more about and/or improve?
+
+::: notes
+-   Now I'd like to learn a little bit more about you.
+
+-   Please take about 3 minutes to think through each of these questions and then we will discuss.
+:::
+
+## What is R?
+
+![](r_logo.png)
+
+::: notes
+-   Does anyone know? (There may be people who said they use R already in the previous slide)
+
+-   So, what is R? Well, R is an **open source** statistical programming language that was created in the 1990's specifically for data analysis.
+
+-   Does anyone know what open source means?
+
+-   Any person, including you and me, can download and install R on our computers for free!
+
+-   Any person, including you and me, can write packages that extend R's capabilities!
+
+-   R works on all major operating systems: MacOS, Windows, and Linux.
+
+-   Powerful! (Demonstrations coming soon)
+:::
+
+## What is RStudio?
+
+![](RStudio-Logo.png)
+
+::: notes
+-   R by itself is not nearly as easy to use as when we combine it with another program called **RStudio**.
+
+-   Has anyone heard of, or used, RStudio before?
+
+-   RStudio is an IDE, which stands for interactive development environment.
+
+-   As the name suggests, it was originally designed to work with the R programming language, but now it works with several different programming languages including Python, Scala, and Julia.
+
+-   The rest of this presentation assumes that you will be working with R in the RStudio IDE.
+:::
+
+## What can we do with R?
+
+![](competencies_overview.png)
+
+::: notes
+We can use R to independently use R to transfer data, manage data, analyze data, present information to our key stakeholders, and even create apps that allow us to interact with our data in lots of interesting and useful ways. Today, we'll *quickly* take a closer look at each of these uses of the R programming language.
+:::
+
+## Transferring Data
+
+![](competencies_transfer.png)
+
+::: notes
+-   What do I mean by "transfer data"?
+
+-   Well, individuals and organizations store their data using different computer programs that use different file types. Some common examples that you may come across in public health are databases, spreadsheets (like Excel), raw data files, and SAS data sets. No matter how the data is stored, you can't do anything with it until you can get it into R, in a form that R can use, and in a location that R has access to.
+
+-   R has a number of packages that typically make it relatively easy to work with data stored in any of these file types, which makes it easy for you to work with your collaborators -- even if they aren't already using R.
+:::
+
+## Managing Data
+
+![](competencies_manage.png)
+
+::: notes
+Data management is a broad term I'm using to refere to all the things you may have to do to your data to get it ready for analysis and/or presentation. You may also hear people refer to this process as data wrangling or data munging. Some specific examples of data management tasks include:
+
+-   [Validating and cleaning data]{.underline}. In other words, dealing with potential errors in the data.
+
+-   [Subsetting data]{.underline}. For example, using only some of the columns or some of the rows.
+
+-   [Creating new variables]{.underline}. For example, creating a BMI variable in a data frame that was sent to you with height and weight columns.
+
+-   [Combining data frames]{.underline}. For example, combining sociodemographic data about study participants with data collected in the field during an intervention.
+
+You may sometimes hear people refer to the 80/20 rule in reference to data management. This "rule" says that in a typical data analysis project, roughly 80% of your time will be spent on data management and only 20% will be spent on the analysis itself. I can't provide you with any empirical evidence (i.e., data) to back this claim up. But, as a person who has been involved in many projects that involve the collection and analysis of data, I can tell you anecdotally that this "rule" is probably pretty close to being accurate in most cases.
+:::
+
+## Analyzing Data
+
+![](competencies_analysis.png)
+
+::: notes
+-   Data analysis is probably the capability you most closely associate with statistical software -- including R. And there is no doubt that R is a powerful tool for analyzing data.
+
+-   We can use R for all of the broad categories of analysis listed here, and probably many more!
+:::
+
+## Presenting Data
+
+![](competencies_present.png)
+
+::: notes
+Our ultimate goal is typically to present your findings in some form or another. For example, a report, a website, or a journal article. With R you can present your results in many different formats with relative ease. In fact, this is one of my favorite things about R and RStudio. It is so easy (relatively speaking) to take your text, tabular, or graphical results and then publish them in many different formats including Microsoft Word, html files that can be viewed in web browsers, and pdf documents.
+
+Let's take a look at some examples.
+:::
+
+## Microsoft Word Documents
+
+![](example_word_document.png){fig-align="center"}
+
+::: notes
+-   [Click here](https://uthtmc.sharepoint.com/:w:/r/sites/SPHCannellPrivate/Shared%20Documents/Conferences%20and%20Trainings/Texas%20DSHS%202023-07-26/Introduction%20to%20R/Example%20Word%20Report.docx?d=w9447124c92ac4b598b7798f196426bd4&csf=1&web=1&e=5pycMF){preview-link="false"} to view an example report created for one of my research projects in Microsoft Word.
+
+-   Open the link manually (command + left click) and show the document to the audience.
+:::
+
+## PDF Documents
+
+![](example_pdf.png){fig-align="center"}
+
+::: notes
+-   [Click here](https://uthtmc.sharepoint.com/:b:/r/sites/SPHCannellPrivate/Shared%20Documents/Conferences%20and%20Trainings/Texas%20DSHS%202023-07-26/Introduction%20to%20R/example_pdf.pdf?csf=1&web=1&e=CXNfcw){preview-link="false"} to view a data dictionary I created in PDF format.
+:::
+
+## HTML Files
+
+-   Hypertext Markup Language (HTML) files are what you are looking at whenever you view a webpage.
+
+-   You can use R to create HTML files that others can view in their web browser.
+
+-   You can email them these files to view in their web browser, or you can make them available for others to view online just like any other website.
+
+## Quarto Documents and Files
+
+![](example_quarto.png){fig-align="center"}
+
+::: notes
+-   It\'s actually kind of difficult for me to *describe* what a Quarto file is if you\'ve never seen or heard of one before. Therefore, I\'m going to start with an example and work backwards from there.
+-   Instead of learning to code in HTML, we can create many different kinds of HTML files with a comparatively easy language called markdown.
+-   We can mix markdown and other content -- like data analysis results -- together in a file called a Quarto file.
+-   Here is the Quarto file that produced the presentation you're viewing right now. Speaking of presentations...
+:::
+
+## Presentations
+
+![](example_presentation.png){fig-align="center"}
+
+::: notes
+-   One type of HTML output we can create is a presentation. For the record, we can also use R and RStudio to create PowerPoint Presentations as well.
+-   [Click here](https://quarto.org/docs/presentations/revealjs/demo/#/title-slide){preview-link="false"} to view a Quarto Presentation about Quarto Presentations.
+:::
+
+## Data Dashboards
+
+![](detect_dashboard.png){fig-align="center"}
+
+::: notes
+-   [Click here](https://pkgs.rstudio.com/flexdashboard/articles/examples.html){preview-link="false"} to view the flexdashboard gallery.
+-   [Click here](https://brad-cannell.github.io/detect_recruitment_dashboard/){preview-link="false"} to view the DETECT recruitment dashboard.
+:::
+
+## Books and Long Reports
+
+![](r4epi.png){fig-align="center"}
+
+::: notes
+-   [Click here](https://www.r4epi.com/){preview-link="false"} to view the R for Epidemiology textbook.
+:::
+
+## Websites
+
+![](website_example.png){fig-align="center"}
+
+::: notes
+-   [Click here](https://www.bradcannell.com/){preview-link="false"} to view my personal website.
+:::
+
+## Interacting With Data
+
+![](competencies_interact.png)
+
+::: notes
+-   **Web applications**. You can even use R to create full-fledged web applications.
+
+-   The easiest way to do that is with an R extension called Shiny.
+
+-   View the [RStudio website](https://shiny.rstudio.com/gallery/) to see some examples.
+:::
+
+## Summary
+
+R is...
+
+-   Free!!
+
+-   Extendable
+
+-   Works on all major operating systems
+
+-   Powerful!!
+
+::: notes
+:::
+
+## Getting Started
+
+-   <https://cran.r-project.org/>
+
+-   <https://posit.co/>
+
+-   <https://www.r4epi.com/>
+
+-   <https://posit.cloud/>
+
+-   <https://quarto.org/>
+
+-   <https://shiny.posit.co/>
